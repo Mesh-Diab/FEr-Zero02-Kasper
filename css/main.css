@@ -22,7 +22,6 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
-    /* background-color: hsl(0deg 0% 5.88%); */
 }
 
 ul {
@@ -215,7 +214,7 @@ header nav .form i {
 /* Landing */
 .landing {
     min-height: 100vh;
-    background-image: url(../img/landing3.jpg);
+    background-image: url(../img/landing3-min.jpg);
     background-size: cover;
     position: relative;
 }
@@ -366,13 +365,19 @@ header nav .form i {
 .design {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-    background-image: url(../img/design-features2.jpg);
+    background-image: url(../img/design-features2-min.jpg);
     background-size: cover;
     height: 700px;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
+}
+
+@media (max-width:768px) {
+    .design {
+        background-image: url(../img/design-features2-mob.jpg);
+    }
 }
 
 .design::before {
@@ -425,5 +430,4 @@ header nav .form i {
     content: "\f390";
     font-weight: 900;
     margin-right: 10px;
-
 }
